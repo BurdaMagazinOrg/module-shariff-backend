@@ -3,6 +3,6 @@
   "description": "Integration of the Shariff backend.",
   "type": "drupal-module",
   "require": {
-    "heise/shariff": "^7.0"
+    "heise/shariff": "^8.0"
   }
 }
