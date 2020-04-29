@@ -1,5 +1,5 @@
 {
-  "name": "burda/shariff_backend",
+  "name": "burdamagazinorg/shariff_backend",
   "description": "Integration of the Shariff backend.",
   "type": "drupal-module",
   "require": {
