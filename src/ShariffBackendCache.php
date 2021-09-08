@@ -79,7 +79,7 @@ class ShariffBackendCache implements CacheInterface {
       ->fields([
         'url_hash' => $key,
         'data' => $content,
-        'timestamp' => REQUEST_TIME,
+        'timestamp' => \Drupal::time()->getRequestTime(),
       ])
       ->condition('url_hash', $key)
       ->execute();
@@ -112,7 +112,7 @@ class ShariffBackendCache implements CacheInterface {
     if ($this->tableExists) {
       $query = $this->query($key);
 
-      $query->condition('timestamp', REQUEST_TIME - (!empty($this->options['ttl']) && is_numeric($this->options['ttl']) ? $this->options['ttl'] : 0), '>=');
+      $query->condition('timestamp', \Drupal::time()->getRequestTime() - (!empty($this->options['ttl']) && is_numeric($this->options['ttl']) ? $this->options['ttl'] : 0), '>=');
 
       return $query
           ->countQuery()

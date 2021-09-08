@@ -21,7 +21,7 @@ function shariff_backend_cron() {
     // orphaned rows.
     $database
       ->delete('shariff_backend')
-      ->condition('timestamp', REQUEST_TIME - 604800, '<')
+      ->condition('timestamp', \Drupal::time()->getRequestTime() - 604800, '<')
       ->execute();
   }
 }
