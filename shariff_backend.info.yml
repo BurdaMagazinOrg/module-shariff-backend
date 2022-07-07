@@ -2,5 +2,6 @@ name: Shariff backend
 type: module
 description: Integration of the Shariff backend.
 core: 8.x
+core_version_requirement: ^8 || ^9
 package: Web services
 configure: shariff_backend.settings

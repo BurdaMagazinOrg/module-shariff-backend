@@ -106,7 +106,7 @@ class ShariffBackendCountsController extends ControllerBase {
     $response->setMaxAge($max_age);
 
     $expires = new \DateTime();
-    $expires->setTimestamp(REQUEST_TIME + $max_age);
+    $expires->setTimestamp(\Drupal::time()->getRequestTime() + $max_age);
     $response->setExpires($expires);
 
     return $response;
