@@ -54,7 +54,7 @@ class ShariffBackend implements ShariffBackendInterface {
       return $cache[$cid];
     }
 
-    $backend_settings = \Drupal::config('shariff_backend.settings')->getRawData();
+    $backend_settings = \Drupal::config('shariff_backend.settings')->get();
     // Simulate share counts if configured in settings file.
     if (empty($backend_settings['simulate_counts'])) {
       // Alter the URL if needed.
