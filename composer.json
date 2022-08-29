@@ -3,12 +3,6 @@
   "description": "Integration of the Shariff backend.",
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
-  "repositories": [
-    {
-      "type": "git",
-      "url": "git@github.com:BurdaMagazinOrg/shariff-backend-php.git"
-    }
-  ],
   "require": {
     "burdamagazinorg/shariff": "dev-master"
   }
