@@ -10,6 +10,6 @@
     }
   ],
   "require": {
-    "erkenes/shariff-backend-php": "feat/ee-php-8-support"
+    "heise/shariff": "dev-feat/ee-php-8-support"
   }
 }
