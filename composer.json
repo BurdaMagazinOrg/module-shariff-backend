@@ -4,6 +4,6 @@
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
   "require": {
-    "erkenes\shariff-backend-php": "feat/ee-php-8-support"
+    "erkenes/shariff-backend-php": "feat/ee-php-8-support"
   }
 }
