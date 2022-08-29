@@ -6,10 +6,10 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:erkenes/shariff-backend-php.git"
+      "url": "https://github.com/BurdaMagazinOrg/shariff-backend-php.git"
     }
   ],
   "require": {
-    "heise/shariff": "dev-feat/ee-php-8-support"
+    "burdamagazinorg/shariff": "dev-feat/ee-php-8-support"
   }
 }
