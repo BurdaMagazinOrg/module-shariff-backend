@@ -10,6 +10,6 @@
     }
   ],
   "require": {
-    "burdamagazinorg/shariff": "dev-feat/ee-php-8-support"
+    "burdamagazinorg/shariff": "dev-master"
   }
 }
