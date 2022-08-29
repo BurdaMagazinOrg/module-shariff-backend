@@ -5,8 +5,8 @@
   "license": "GPL-2.0-or-later",
   "repositories": [
     {
-      "type": "vcs",
-      "url": "https://github.com/BurdaMagazinOrg/shariff-backend-php.git"
+      "type": "git",
+      "url": "git@github.com:BurdaMagazinOrg/shariff-backend-php.git"
     }
   ],
   "require": {
