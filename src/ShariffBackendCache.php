@@ -102,7 +102,7 @@ class ShariffBackendCache implements CacheInterface {
       }
     }
 
-    return NULL;
+    return '';
   }
 
   /**
