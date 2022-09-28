@@ -4,6 +4,6 @@
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
   "require": {
-    "heise/shariff": "^9.0"
+    "heise/shariff":"dev-feat/ee-php-8-support"
   }
 }

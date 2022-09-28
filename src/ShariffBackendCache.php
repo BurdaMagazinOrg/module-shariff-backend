@@ -47,7 +47,7 @@ class ShariffBackendCache implements CacheInterface {
   /**
    * {@inheritdoc}
    */
-  public function setItem($key, $content) {
+  public function setItem(string $key, string $content): void {
     if (!$this->tableExists) {
       return;
     }
@@ -88,7 +88,7 @@ class ShariffBackendCache implements CacheInterface {
   /**
    * {@inheritdoc}
    */
-  public function getItem($key) {
+  public function getItem(string $key): string {
     if ($this->tableExists) {
       $result = $this->query($key)
         ->fields('sb', [
@@ -102,13 +102,13 @@ class ShariffBackendCache implements CacheInterface {
       }
     }
 
-    return NULL;
+    return '';
   }
 
   /**
    * {@inheritdoc}
    */
-  public function hasItem($key) {
+  public function hasItem(string $key): bool {
     if ($this->tableExists) {
       $query = $this->query($key);
 
